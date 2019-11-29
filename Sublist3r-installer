@@ -22,6 +22,5 @@ git clone https://github.com/aboul3la/Sublist3r
 cd Sublist3r
 python2 setup.py install
 pip2 install -r requirements.txt
-ln -s sublist3r.py $PREFIX/bin/sublist3r
 sleep 1 && echo -e  $verde"OK"
 
