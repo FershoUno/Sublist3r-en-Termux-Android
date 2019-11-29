@@ -15,6 +15,7 @@ verde="\033[1;32m"
 
 apt update -y
 apt install git -y
+cd $HOME
 mkdir -p tools
 cd tools
 git clone https://github.com/aboul3la/Sublist3r
