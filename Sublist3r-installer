@@ -1,0 +1,26 @@
+#!/bin/bash
+# by: FershoUno
+# Enlaces de los Grupos
+# Facebook: https://www.facebook.com/groups/nucleolinux/
+# Facebook: https://www.facebook.com/groups/nucleolinux.uagrm 
+# Telegram: https://t.me/nucleolinux_uagrm                     
+# GitHub  : https://github.com/nucleolinux-uagrm
+# Telegram: @FershoUno (personal)
+
+
+# sublist3r Coded By Ahmed Aboul-Ela - @aboul3la
+# GitHub : https://github.com/aboul3la/Sublist3r  
+
+verde="\033[1;32m"
+
+apt update -y
+apt install git -y
+mkdir -p tools
+cd tools
+git clone https://github.com/aboul3la/Sublist3r
+cd Sublist3r
+python2 setup.py install
+pip2 install -r requirements.txt
+ln -s sublist3r.py $PREFIX/bin/sublist3r
+sleep 1 && echo -e  $verde"OK"
+
