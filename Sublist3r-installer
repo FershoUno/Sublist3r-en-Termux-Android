@@ -14,7 +14,7 @@
 verde="\033[1;32m"
 
 apt update -y
-apt install git -y
+apt install python2 -y
 cd $HOME
 mkdir -p tools
 cd tools
