@@ -17,19 +17,19 @@ chmod +x Sublist3r-installer
 
 __enumerar un dominio__  
 
-    $ sublist3r -d dominio.com
+    $ sublist3r -d example.com
 
 __enumerar un dominio con puerto especifico__  
 
-    $ sublist3r -d dominio.com -p 22  
+    $ sublist3r -d example.com -p 22  
 
 __enumerar un dominio con varios puertos__  
 
-    $ subist3r -d dominio -p 21,22,80,443,8080,9050
+    $ subist3r -d example.com -p 21,22,80,443,8080,9050
 
 __guardar resultados de enumeración del dominio en un fichero__  
 
-    $ sublister -d dominio.com -o results-dominio
+    $ sublister -d example.com -o results-dominio
 
 __Ver todas las opciones de sublist3r__
 
