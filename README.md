@@ -1,19 +1,9 @@
 # Sublist3r-en-Termux-Android
-
-Nucleo Linux UAGRM   
-Enlaces de los Grupos   
-
-Facebook: https://www.facebook.com/groups/nucleolinux/
-
-Facebook: https://www.facebook.com/groups/nucleolinux.uagrm 
-
-Telegram: https://t.me/nucleolinux_uagrm                     
-
-GitHub  : https://github.com/nucleolinux-uagrm               
-
+Sublist3r, es una herramienta diseñada para enumerar los subdominios de las paginas web a utilizando diferentes motores de búsquedas como Google, Bing entre otros, aparte de utilizar motores de búsquedas mas conocidos, también recopila subdominios utilizando Netcraft, VirusTotal, DNSdumpster entre otros.
+Sublist3r cuenta con una opción llamado "BRUTEFORCE" que usa un modulo "subbrute" con el fin de encontrar subdominios utilizando fuerza bruta.
 
 # Instalación Sublist3r en Termux
-
+~~~
 git clone https://github.com/FershoUno/Sublist3r-en-Termux-Android
 
 cd Sublist3r-en-Termux-Android
@@ -21,33 +11,29 @@ cd Sublist3r-en-Termux-Android
 chmod +x Sublist3r-installer
 
 ./Sublist3r-installer
+~~~
 
-#
+# Ejemplos de uso
 
-Sublist3r, es una herramienta diseñada para enumerar los subdominios de las paginas web a utilizando diferentes motores de busquedas como Google, Bing entre otros, aparte de utilizar motores de busquedas mas conocidos, tambien recopila subdominios utilizando Netcraft, VirusTotal, DNSdumpster entre otros.
-Sublist3r cuenta con una opción llamado "BRUTEFORCE" que usa un modulo "subbrute" con el fin de encontrar subdominios utilizando fuerza bruta.
+__enumerar un dominio__  
 
+    $ sublist3r -d dominio.com
 
-Ejemplos de uso
+__enumerar un dominio con puerto especifico__  
 
-# enumerar un dominio
+    $ sublist3r -d dominio.com -p 22  
 
-$ sublist3r -d dominio.com
+__enumerar un dominio con varios puertos__  
 
-# enumerar un dominio con puerto especifico
-$ sublist3r -d dominio.com -p 22
+    $ subist3r -d dominio -p 21,22,80,443,8080,9050
 
-# enumerar un dominio con varios puertos
-$ subist3r -d dominio -p 21,22,80,443,8080,9050
+__guardar resultados de enumeración del dominio en un fichero__  
 
-# guardar resultados de enumeración del dominio en un fichero
-$ sublister -d dominio.com -o results-dominio
+    $ sublister -d dominio.com -o results-dominio
 
-# Ver todas las opciones de sublist3r 
-$ sublist3r --help
+__Ver todas las opciones de sublist3r__
 
+    $ sublist3r --help
 
 
-
-
-Nota.- ejecutar sublist3r como cualquier comando
+>Nota.- Solo utilizarlo con fines academicos.
